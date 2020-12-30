@@ -7,13 +7,13 @@
         body{
             background-color: #2b3137;
         }
-        .header-control{
+        .header{
             width : 100%;
             height: 64px;
             overflow: hidden;
         }
 
-        .control-align{
+        .align{
             width: 970px;
             height: 300px;
             margin-left: auto;
@@ -24,12 +24,11 @@
             width: 30px;
             height: 30px;
             margin-right:20px;
-            margin-bottom:20px;
             float: left;
         }
 
         .header-nav li{
-            font-size:1.0em;
+            font-size:0.8em;
             color:#ffffff;
             margin-right:20px;
             list-style:none;
@@ -41,23 +40,23 @@
             list-style: none;
         }
 
-        .search li:nth-child(1){
+        .su{
             font-size:0.8em;
+            background-color: #2b3137;
             color:#ffffff;
-            border:1px solid #ffffff;
+            border:0.5px solid #ffffff;
             border-radius: 3px 3px;
-            padding:2px;
         }
 
-        .search li:nth-child(2){
-            font-size:1.0em;
+        .si{
+            font-size:0.8em;
+            background-color: #2b3137;
             color: #ffffff;
             margin-right:10px;
         }
 
         .search li:nth-child(3){
-            font-size:1.0em;
-            background-color: #464b50;
+            font-size:0.8em;
             color : white;
             border-radius: 03px;
             border:1px solid #95a5a6;
@@ -121,6 +120,10 @@
             padding-left: 10px;
             font-size:15pt;
         }
+
+        .ipt:focus{
+            background-color:#e8f0fe
+        }
         .ect{
             font-size:7pt;
             margin: 5pt 33pt;
@@ -129,6 +132,7 @@
         .blu{
             color:blue;
         }
+
         .signin{
             width: 317px;
             height: 50px;
@@ -146,25 +150,37 @@
     </style>
 </head>
 <body>
-    <div class="header-control">
-        <div class="control-align">
+    <div class="header">
+        <div class="align">
             <div class="img-control">
                 <img src="github-logo.png"/>
             </div>
             <div class="header-nav">
                 <ul>
-                    <li>Why Github?</li>
+                    <li><select>
+                        <option>Why Github?</option>
+                        <option>너무 못해서</option>
+                        <option>부끄럽네요..</option>
+                    </select></li>
                     <li>Team</li>
                     <li>Enterprise</li>
-                    <li>Explore</li>
+                    <li><select>
+                        <option>Explore</option>
+                        <option>피로그래밍</option>
+                        <option>화이팅~~</option>
+                    </select></li>
                     <li>Marketplace</li>
-                    <li>Pricing</li>
+                    <li><select>
+                        <option>Pricing</option>
+                        <option>으악</option>
+                        <option>힘들다..</option>
+                    </select></li>
                 </ul>
             </div>
             <div class="search">
                 <ul>
-                    <li>Sign up</li>
-                    <li>Sign in</li>
+                    <li><button class="su">Sign up</button></li>
+                    <li><button class="si">Sign in</button></li>
                     <li><input type="text" placeholder="Search Github"/></li>
                 </ul>
             </div>
@@ -190,7 +206,7 @@
             <p class="ect">Make sure it's at least 15 characters OR at least 8 characters including a
                 number and a lowercase letter. <span class="blu">Learn more.</span></p>
             <button class="signin"><b>Sign up for Github</b></button>
-            <p class="ect2">By clicking "Sign up for Github ", you agree to our <span class="blu">Terms of Services</span>and
+            <p class="ect2">By clicking "Sign up for Github ", you agree to our <span class="blu">Terms of Services</span> and
              <span class="blu">Privacy Statement</span>. We'll occasionally send you account related emails.</p>
        </div>
         <div class="footer">
