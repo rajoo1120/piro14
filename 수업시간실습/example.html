@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .txt-blue {
+        color: blue;
+      }
+      .txt-red {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <ul></ul>
+    </div>
+    <button onclick="clickEvent()">클릭</button>
+    <script>
+      function clickEvent() {
+        const ul = document.querySelector("ul");
+        const newE1 = document.createElement("li");
+        const newText = document.createTextNode("hello");
+        newE1.appendChild(newText);
+        console.log(newE1);
+        ul.appendChild(newE1);
+      }
+    </script>
+  </body>
+</html>
